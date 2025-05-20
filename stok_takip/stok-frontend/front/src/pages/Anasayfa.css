@@ -1,0 +1,46 @@
+/* src/pages/Anasayfa.css */
+
+.anasayfa-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.kategoriler-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.kategori-kutu {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kategori-kutu:hover {
+  background-color: #e0e0e0;
+}
+
+.urunler-container {
+  margin-top: 40px;
+}
+
+.urun-kutular {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.urun-kutu {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.urun-kutu p {
+  margin: 5px 0;
+}
