@@ -1,0 +1,109 @@
+/* Sayfa ortalama ve kutu stil */
+.urun-ekle-container {
+  max-width: 620px;
+  margin: 50px auto;
+  padding: 35px 40px;
+  background: linear-gradient(to bottom right, #f9f9f9, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Başlık */
+.urun-ekle-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2F4F4F;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Etiketler */
+.urun-ekle-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Form girişleri */
+.urun-ekle-container form input[type="text"],
+.urun-ekle-container form input[type="number"],
+.urun-ekle-container form select,
+.urun-ekle-container form input[type="file"] {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #fefefe;
+}
+
+.urun-ekle-container form input:focus,
+.urun-ekle-container form select:focus {
+  border-color: #2F4F4F;
+  box-shadow: 0 0 4px rgba(47, 79, 79, 0.3);
+  outline: none;
+}
+
+/* Butonlar */
+.urun-ekle-container button {
+  background-color: #2F4F4F;
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.urun-ekle-container button:hover {
+  background-color: #1c2c2c;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* İkinci buton stili (geri dön) */
+.urun-ekle-container > button:last-of-type {
+  background-color: #6c757d;
+}
+
+.urun-ekle-container > button:last-of-type:hover {
+  background-color: #5a6268;
+}
+
+/* Görsel önizleme */
+.urun-ekle-container img {
+  display: block;
+  margin-top: 10px;
+  max-width: 120px;
+  max-height: 120px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+/* Kategori form boşluğu */
+.urun-ekle-container .kategori-form {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .urun-ekle-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .urun-ekle-container button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

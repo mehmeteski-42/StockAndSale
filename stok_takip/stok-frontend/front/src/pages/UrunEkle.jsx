@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import "./UrunEkle.css";
 
 const UrunEkle = () => {
   const [formData, setFormData] = useState({
@@ -133,7 +134,7 @@ const UrunEkle = () => {
             kategori: "", // Kategori sıfırlanıyor
             image: null, // Görseli sıfırlıyoruz
           });
-          navigate("/urunler");
+          navigate("/");
         })
         .catch((err) => {
           alert(err.message);
@@ -142,7 +143,7 @@ const UrunEkle = () => {
 
 
   return (
-    <div>
+    <div className="urun-ekle-container">
       <h2>Yeni Ürün Ekle</h2>
       <form onSubmit={handleSubmit}>
         <input
@@ -288,7 +289,7 @@ const UrunEkle = () => {
         <button type="submit">Ekle</button>
       </form>
       <br />
-      <button onClick={() => navigate("/urunler")}>Ürünler Sayfasına Dön</button>
+      <button onClick={() => navigate("/")}>Anasayfaya Dön</button>
     </div>
   );
 };
