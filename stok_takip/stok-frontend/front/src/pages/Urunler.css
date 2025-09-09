@@ -1,3 +1,47 @@
+/* UrunEkle sayfası için input renkleri */
+.required-input {
+  border: 2px solid #e74c3c !important;
+  background-color: #fff5f5 !important;
+  color: #c0392b !important;
+}
+.required-input:focus {
+  border-color: #c0392b !important;
+  box-shadow: 0 0 0 2px #e74c3c33;
+}
+.optional-input {
+  border: 2px solid #3498db !important;
+  background-color: #f0f8ff !important;
+  color: #2980b9 !important;
+}
+.optional-input:focus {
+  border-color: #2980b9 !important;
+  box-shadow: 0 0 0 2px #3498db33;
+}
+.add-product-btn, button, .action-btn {
+  display: inline-block;
+  width: fit-content;
+  margin: 0 8px 30px 8px;
+  padding: 12px 30px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+.add-product-btn:hover, button:hover, .action-btn:hover {
+  background-color: #2980b9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+}
+.urunler-table th {
+  background-color: #2980b9;
+  color: white;
+  font-weight: 700;
+}
 /* src/pages/Urunler.css */
 * {
   box-sizing: border-box;
@@ -42,35 +86,37 @@ body {
   text-align: center;
 }
 
+.add-product-btn {
+  display: inline-block;
+  width: fit-content;
+  margin: 0 auto 30px auto;
+  padding: 12px 30px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
 .add-product-btn:hover {
-  background-color: #2980b9;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: #c0392b;
+  box-shadow: 0 6px 12px rgba(231, 76, 60, 0.2);
 }
-
-.urunler-table {
-  width: 100%;
-  margin-top: 20px;
-  border-collapse: collapse;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.urunler-table th, .urunler-table td {
-  padding: 12px;
-  text-align: left;
-  font-size: 1.1rem;
   color: #2c3e50;
 }
 
 .urunler-table th {
-  background-color: #2980b9;
+  background-color: #e74c3c;
   color: white;
   font-weight: 700;
+  border-right: 2px solid #111;
 }
 
 .urunler-table tr:nth-child(even) {
   background-color: #ecf0f1;
+  border-right: 2px solid #111;
 }
 
 .urunler-table tr:hover {
@@ -79,9 +125,10 @@ body {
 
 .urunler-table td {
   background-color: #ffffff;
-  border: 1px solid #ecf0f1;
+  border: 1px solid #111;
 }
 
 .urunler-table td:last-child {
+  border-right: none;
   border-bottom: none;
 }
